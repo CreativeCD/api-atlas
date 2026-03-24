@@ -4,7 +4,7 @@
 
 API Atlas is a web application that allows users to explore and discover public APIs from various categories. The application fetches real-time data from a public APIs directory and displays it in a clean and user-friendly interface. Users can search, filter, and sort APIs, mark favorites, and switch between dark and light mode.
 
-This project demonstrates the use of JavaScript, Fetch API, Array Higher-Order Functions, responsive UI design, and local storage.
+This project demonstrates the use of JavaScript, Fetch API, responsive UI design, and local storage.
 
 ---
 
@@ -17,7 +17,6 @@ This project demonstrates the use of JavaScript, Fetch API, Array Higher-Order F
 * Sort APIs alphabetically
 * Dark mode / Light mode toggle
 * Add APIs to Favorites
-* Pagination
 * Loading indicator
 * Responsive design for mobile, tablet, and desktop
 
@@ -38,25 +37,7 @@ This API provides a list of free public APIs including their name, description, 
 * CSS
 * JavaScript
 * Fetch API
-* Array Higher-Order Functions (map, filter, sort)
 * Local Storage
-* Tailwind CSS / Bootstrap (optional)
-
----
-
-## Project Structure
-
-```
-api-atlas/
-│
-├── index.html
-├── style.css
-├── script.js
-├── api.js
-├── utils.js
-├── README.md
-└── assets/
-```
 
 ---
 
@@ -81,16 +62,6 @@ api-atlas/
 
 ---
 
-## Future Improvements
-
-* Infinite scrolling
-* Advanced filtering options
-* API details page
-* User authentication
-* Save user preferences
-* Performance optimization using debouncing and throttling
-
----
 
 ## Author
 
