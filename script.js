@@ -1,6 +1,6 @@
-const API_URL = "https://apikeyhub.com";
+const API_URL = "https://discovery.googleapis.com/discovery/v1/apis";
 
-let allPosts = [];
+let allAPIs = [];
 
 async function fetchAPIs() {
     const loader = document.getElementById("loader");
@@ -13,40 +13,49 @@ async function fetchAPIs() {
         const response = await fetch(API_URL);
         const data = await response.json();
 
-        allPosts = data;
-        displayAPIs(allPosts);
+        // Google APIs list is in data.items
+        allAPIs = data.items || [];
+        displayAPIs(allAPIs);
 
     } catch (error) {
         container.innerHTML = "<h2>Error fetching data</h2>";
-        console.log(error);
+        console.error(error);
     }
 
     loader.style.display = "none";
 }
 
-function displayAPIs(posts) {
+function displayAPIs(apis) {
     const container = document.getElementById("cardsContainer");
     container.innerHTML = "";
 
-    posts.slice(0, 20).forEach(post => {
+    if (apis.length === 0) {
+        container.innerHTML = "<h3>No APIs found</h3>";
+        return;
+    }
+
+    // Show first 20 APIs
+    apis.slice(0, 20).forEach(api => {
         const card = document.createElement("div");
         card.classList.add("card");
 
         card.innerHTML = `
-            <h3>${post.title}</h3>
-            <p>${post.body}</p>
-            <p><strong>Post ID:</strong> ${post.id}</p>
+            <h3>${api.title}</h3>
+            <p><strong>Name:</strong> ${api.name}</p>
+            <p><strong>Version:</strong> ${api.version}</p>
+            <p><a href="${api.discoveryRestUrl}" target="_blank">Discovery URL</a></p>
         `;
 
         container.appendChild(card);
     });
 }
 
-// Search
+// Search by title
 document.getElementById("searchInput").addEventListener("input", function() {
     const searchValue = this.value.toLowerCase();
-    const filtered = allPosts.filter(post =>
-        post.title.toLowerCase().includes(searchValue)
+    const filtered = allAPIs.filter(api =>
+        api.title.toLowerCase().includes(searchValue) ||
+        api.name.toLowerCase().includes(searchValue)
     );
     displayAPIs(filtered);
 });
@@ -56,4 +65,5 @@ document.getElementById("darkModeToggle").addEventListener("click", () => {
     document.body.classList.toggle("dark");
 });
 
+// Initial fetch
 fetchAPIs();
