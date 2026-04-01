@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Atlas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <h1>API Atlas</h1>
+        <button id="darkModeToggle">Dark Mode</button>
+    </nav>
+
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search APIs...">
+        
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+        </select>
+
+        <select id="sortSelect">
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+        </select>
+    </section>
+
+    <div id="loader">Loading APIs...</div>
+
+    <section id="cardsContainer"></section>
+
+    <script src="script.js"></script>
+</body>
+</html>
