@@ -40,7 +40,6 @@ This API provides a list of free public APIs including their name, description, 
 * Fetch API
 * Array Higher-Order Functions (map, filter, sort)
 * Local Storage
-* Tailwind CSS / Bootstrap (optional)
 
 ---
 

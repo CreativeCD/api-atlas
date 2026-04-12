@@ -1,0 +1,124 @@
+{
+  "apis": [
+    {
+      "name": "OpenWeather",
+      "description": "Get real-time weather data",
+      "category": "Weather",
+      "link": "https://api.openweathermap.org"
+    },
+    {
+      "name": "NewsAPI",
+      "description": "Fetch latest news articles",
+      "category": "News",
+      "link": "https://newsapi.org"
+    },
+    {
+      "name": "CoinGecko",
+      "description": "Cryptocurrency prices and market data",
+      "category": "Finance",
+      "link": "https://api.coingecko.com"
+    },
+    {
+      "name": "REST Countries",
+      "description": "Information about countries worldwide",
+      "category": "Geography",
+      "link": "https://restcountries.com"
+    },
+    {
+      "name": "Cat Facts",
+      "description": "Random interesting facts about cats",
+      "category": "Animals",
+      "link": "https://catfact.ninja"
+    },
+    {
+      "name": "Dog API",
+      "description": "Random dog images and breeds",
+      "category": "Animals",
+      "link": "https://dog.ceo/api"
+    },
+    {
+      "name": "TMDB",
+      "description": "Movie and TV show database",
+      "category": "Entertainment",
+      "link": "https://www.themoviedb.org"
+    },
+    {
+      "name": "Spotify",
+      "description": "Music streaming and playlist data",
+      "category": "Music",
+      "link": "https://api.spotify.com"
+    },
+    {
+      "name": "JokeAPI",
+      "description": "Programming and general jokes",
+      "category": "Fun",
+      "link": "https://v2.jokeapi.dev"
+    },
+    {
+      "name": "Open Library",
+      "description": "Books and author information",
+      "category": "Books",
+      "link": "https://openlibrary.org"
+    },
+    {
+      "name": "NASA",
+      "description": "Space, astronomy, and satellite data",
+      "category": "Science",
+      "link": "https://api.nasa.gov"
+    },
+    {
+      "name": "PokeAPI",
+      "description": "Pokemon data and stats",
+      "category": "Games",
+      "link": "https://pokeapi.co"
+    },
+    {
+      "name": "IPify",
+      "description": "Get your public IP address",
+      "category": "Tools",
+      "link": "https://api.ipify.org"
+    },
+    {
+      "name": "Genderize",
+      "description": "Predict gender based on name",
+      "category": "AI",
+      "link": "https://api.genderize.io"
+    },
+    {
+      "name": "Agify",
+      "description": "Predict age using name",
+      "category": "AI",
+      "link": "https://api.agify.io"
+    },
+    {
+      "name": "ReqRes",
+      "description": "Fake API for testing frontend apps",
+      "category": "Development",
+      "link": "https://reqres.in"
+    },
+    {
+      "name": "Open Brewery DB",
+      "description": "Information about breweries",
+      "category": "Food & Drink",
+      "link": "https://www.openbrewerydb.org"
+    },
+    {
+      "name": "Edamam",
+      "description": "Recipe search and nutrition data",
+      "category": "Food",
+      "link": "https://developer.edamam.com"
+    },
+    {
+      "name": "Fixer",
+      "description": "Currency exchange rates API",
+      "category": "Finance",
+      "link": "https://fixer.io"
+    },
+    {
+      "name": "Shibe API",
+      "description": "Random Shiba Inu images",
+      "category": "Animals",
+      "link": "https://shibe.online"
+    }
+  ]
+}
