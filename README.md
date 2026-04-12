@@ -44,22 +44,6 @@ This API provides a list of free public APIs including their name, description, 
 
 ---
 
-## Project Structure
-
-```
-api-atlas/
-│
-├── index.html
-├── style.css
-├── script.js
-├── api.js
-├── utils.js
-├── README.md
-└── assets/
-```
-
----
-
 ## How to Run the Project
 
 1. Clone the repository
