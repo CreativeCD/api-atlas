@@ -6,28 +6,34 @@
 </head>
 <body>
 
-    <nav>
-        <h1>API Atlas</h1>
-        <button id="darkModeToggle">Dark Mode</button>
-    </nav>
+<nav>
+    <h1>API Atlas 🌐</h1>
+    <button id="darkModeToggle">Dark Mode</button>
+</nav>
 
-    <section class="controls">
-        <input type="text" id="searchInput" placeholder="Search APIs...">
-        
-        <select id="categoryFilter">
-            <option value="">All Categories</option>
-        </select>
+<section class="controls">
+    <input type="text" id="searchInput" placeholder="Search APIs...">
 
-        <select id="sortSelect">
-            <option value="az">A-Z</option>
-            <option value="za">Z-A</option>
-        </select>
-    </section>
+    <select id="categoryFilter">
+        <option value="">All Categories</option>
+    </select>
 
-    <div id="loader">Loading APIs...</div>
+    <select id="sortSelect">
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+    </select>
+</section>
 
-    <section id="cardsContainer"></section>
+<div id="loader">Loading APIs...</div>
 
-    <script src="script.js"></script>
+<section id="cardsContainer"></section>
+
+<div class="pagination">
+    <button id="prevBtn">Prev</button>
+    <span id="pageInfo"></span>
+    <button id="nextBtn">Next</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
